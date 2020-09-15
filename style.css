@@ -3,23 +3,26 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    position: relative;
-    z-index: 11;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container {
-    position: absolute;
-    z-index: 12;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    
+    display: inline-block;
+    width: 40rem;
+    height: auto;
+}
+
+.row {
+    text-align: center;
+    height: 4rem;
 }
 .black {
     margin: 0;
     display: inline-block;
-    width: 3.5rem;
-    height: 3.5rem;
+    height: 100%;
+    width: 10%;
     background-color: black;
     margin-left: -3px;
     margin-bottom: -3px;
@@ -29,8 +32,8 @@ body {
 .white {
     margin: 0;
     display: inline-block;
-    width: 3.5rem;
-    height: 3.5rem;
+    height: 100%;
+    width: 10%;
     background-color: white;
     margin-left: -3px;
     margin-bottom: -3px;
@@ -84,3 +87,15 @@ footer a {
 a:hover {
     color: grey;
 }
+
+
+/* @media (min-width: 1031px){
+    .black {
+        width: 3rem;
+        height: 3rem;
+    }
+    .white {
+         width: 3rem;
+         height: 3rem;
+    }
+} */
